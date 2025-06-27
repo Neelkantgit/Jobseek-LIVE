@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Login - Frontend Only</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      padding: 20px;
+    }
+
+    form {
+      margin-bottom: 20px;
+    }
+
+    input[type="text"] {
+      padding: 8px;
+      margin: 5px;
+      width: 200px;
+    }
+
+    button {
+      padding: 8px 15px;
+    }
+
+    table {
+      width: 100%;
+      border-collapse: collapse;
+      margin-top: 10px;
+    }
+
+    th, td {
+      border: 1px solid #ccc;
+      padding: 10px;
+      text-align: left;
+    }
+
+    th {
+      background-color: #f2f2f2;
+    }
+  </style>
+</head>
+<body>
+
+  <h2>User Login</h2>
+  <form id="loginForm">
+    <input type="text" id="name" placeholder="Enter your Name" required />
+    <input type="text" id="surname" placeholder="Enter your Surname" required />
+    <button type="submit">Submit</button>
+  </form>
+
+  <h3>Submitted Users</h3>
+  <table id="userTable">
+    <thead>
+      <tr>
+        <th>Name</th>
+        <th>Surname</th>
+      </tr>
+    </thead>
+    <tbody>
+      <!-- Here is the table where the data enterred will be stored. -->
+    </tbody>
+  </table>
+
+  <script>
+    const form = document.getElementById('loginForm');
+    const tableBody = document.getElementById('userTable').getElementsByTagName('tbody')[0];
+
+    form.addEventListener('submit', function(e) {
+      e.preventDefault(); // Prevent form from reloading the page
+
+      const name = document.getElementById('name').value.trim();
+      const surname = document.getElementById('surname').value.trim();
+
+      if (name && surname) {
+        // Create a new row
+        const newRow = tableBody.insertRow();
+
+        // Insert cells
+        const nameCell = newRow.insertCell(0);
+        const surnameCell = newRow.insertCell(1);
+
+        // Add text
+        nameCell.textContent = name;
+        surnameCell.textContent = surname;
+
+        // Clear the form
+        form.reset();
+      }
+    });
+  </script>
+
+</body>
+</html>
