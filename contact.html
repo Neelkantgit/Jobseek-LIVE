@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Contact Us | JobSeek</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+  <header>
+    <div class="container">
+      <h1>JobSeek</h1>
+      <nav>
+        <a href="index.html">Home</a>
+        <a href="jobs.html">Jobs</a>
+        <a href="about.html">About Us</a>
+        <a href="contact.html" class="active">Contact</a>
+      </nav>
+    </div>
+  </header>
+
+
+  <section class="contact-section">
+    <div class="container contact-container">
+
+      <div class="contact-info">
+        <h2>Get in Touch</h2>
+        <p>We’d love to hear from you! Whether you have a question or want to learn more, drop us a message.</p>
+
+        <div class="contact-item">
+          <span class="icon">📧</span>
+          <a href="mailto:support@jobseek.com">support@jobseek.com</a>
+        </div>
+
+        <div class="contact-item">
+          <span class="icon">📞</span>
+          <a href="tel:+23057654321">+230 57654321</a>
+        </div>
+
+        <div class="contact-item">
+          <span class="icon">📍</span>
+          <address>Sodnac Avenue, Mauritius</address>
+        </div>  
+      </div>
+
+      <form class="contact-form" novalidate>
+        <div class="form-group">
+          <input type="text" id="name" name="name" required />
+          <label for="name">Your Name</label>
+        </div>
+
+        <div class="form-group">
+          <input type="email" id="email" name="email" required />
+          <label for="email">Your Email</label>
+        </div>
+
+        <div class="form-group">
+          <input type="text" id="subject" name="subject" />
+          <label for="subject">Subject</label>
+        </div>
+
+        <div class="form-group">
+          <textarea id="message" name="message" rows="5" required></textarea>
+          <label for="message">Your Message</label>
+        </div>
+
+        <button type="submit" class="btn-submit">Send Message</button>
+      </form>
+
+    </div>
+  </section>
+
+  <footer>
+    <div class="container">
+      <p>&copy; 2025 JobSeek. All rights reserved.</p>
+    </div>
+  </footer>
+
+</body>
+</html>

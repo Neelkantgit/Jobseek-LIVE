@@ -1,0 +1,32 @@
+[
+  {
+    "id": 1,
+    "title": "Frontend Developer",
+    "company": "Google",
+    "location": "Mountain View, CA",
+    "type": "Full-time",
+    "remote": true,
+    "posted": "2 days ago",
+    "logo": "https://logo.clearbit.com/google.com"
+  },
+  {
+    "id": 2,
+    "title": "Marketing Specialist",
+    "company": "Spotify",
+    "location": "New York, NY",
+    "type": "Part-time",
+    "remote": false,
+    "posted": "1 week ago",
+    "logo": "https://logo.clearbit.com/spotify.com"
+  },
+  {
+    "id": 3,
+    "title": "UX Designer",
+    "company": "Apple",
+    "location": "Cupertino, CA",
+    "type": "Full-time",
+    "remote": false,
+    "posted": "5 days ago",
+    "logo": "https://logo.clearbit.com/apple.com"
+  }
+]
